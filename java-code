@@ -1,9 +1,29 @@
+<<<<<<< HEAD
 /* HelloWorld.java
  */myworld
+=======
+package batch1;
 
-public class HelloWorld
-{
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class Locators {
+>>>>>>> df30a76fb8b0ad0f2893625178f0bf56f4db2ae6
+
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
+		// TODO Auto-generated method stub
+	System.setProperty("webdriver.chrome.driver","E:\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("http://automationpractice.com/index.php");
+//driver.manage().window().maximize();
+//driver.findElement(By.className("login")).click();
+   driver.findElement(By.linkText("Sign in")).click();
+   driver.findElement(By.name("email")).click();
+		//int size=driver.findElement(By.tagName("a")).size();
+		//System.out.println(size);
+		
+
 	}
 }
